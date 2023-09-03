@@ -1,0 +1,873 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+main{
+    margin-top: 128px;
+}
+
+@media only screen and (max-width: 860px) {
+    main{
+        margin-top: 95px;
+    }
+}
+
+header > div:nth-of-type(1){
+    background-color: #334999;
+    width: 100%;
+    height: auto;
+}
+
+header > div:nth-of-type(1) > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div:nth-of-type(1) > div ul{ 
+    list-style: none;
+    display: flex;
+}
+
+header > div:nth-of-type(1) > div ul li{
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+header > div:nth-of-type(1) > div ul:nth-of-type(1) li a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+header > div:nth-of-type(1) > div ul:nth-of-type(1) li{ 
+    margin: 0 25px 0 0;
+}
+
+header > div:nth-of-type(1) > div ul:nth-of-type(2) li{ 
+    margin: 0 0 0 25px;
+}
+
+
+
+header > div:nth-of-type(2){
+    background: #ffff;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 25px 0;
+    border-bottom: 3px solid #334999;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+header > div:nth-of-type(2) > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div:nth-of-type(2) > div a img{
+    width: 200px;
+    height: auto;
+} 
+
+header > div:nth-of-type(2) > div ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header > div:nth-of-type(2) > div ul li{    
+    margin: 0 25px 0 0;
+}
+
+header > div:nth-of-type(2) > div ul li:last-child{    
+    margin: 0;
+}
+
+header > div:nth-of-type(2) > div ul li a{    
+    color: #334999;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1215px) {
+    header > div:nth-of-type(1) > div{
+        padding: 5px 15px;
+    }
+
+    header > div:nth-of-type(2){
+        padding: 25px 15px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    header > div:nth-of-type(1){
+        display: none;
+    }
+
+    header > div:nth-of-type(2) > div ul{
+        display: none;
+    }
+
+    header > div:nth-of-type(2){
+        height: 100px;
+    }
+
+
+    header > div:nth-of-type(2) > div a img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.hero{
+    width: 100%;
+    height: 600px;
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    border-bottom: 3px solid #334999;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.hero > div{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.hero > div > section:nth-of-type(1){
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.hero > div > section:nth-of-type(1) p{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.hero > div > section:nth-of-type(1) h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #334999;
+    margin-bottom: 25px;
+}
+
+.hero > div > section:nth-of-type(1) h2{
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.hero > div > section:nth-of-type(1) a{
+    background-color: #388df0;
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 30px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.hero > div > section:nth-of-type(2) img{
+    height: 85%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+@media only screen and (max-width: 1215px) {
+    .hero > div{
+        padding: 0 15px;
+    }
+
+    .hero > div > section:nth-of-type(1){
+        left: 75px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .hero > div > section:nth-of-type(1){
+        left: 15px;
+    }
+
+    .hero > div > section:nth-of-type(2) img{
+        height: 75%;
+        right: 15px;
+    }
+
+    .hero > div > section:nth-of-type(1) h1{
+        font-size: 30px;
+    }   
+
+    .hero > div > section:nth-of-type(1) h2{
+        font-size: 20px;
+    }   
+}
+
+@media only screen and (max-width: 720px) {
+    .hero{
+        height: 750px;
+    }
+
+    .hero > div > section:nth-of-type(1){
+        width: 100%;
+    }
+
+    .hero > div > section:nth-of-type(1){
+        height: fit-content;
+        width: auto;
+        margin: 50px 0 0 0;
+        padding: 0 15px 0 0;
+    }
+    
+    .hero > div > section:nth-of-type(1) h1{
+        margin-bottom: 15px;
+    }
+
+    .hero > div > section:nth-of-type(1) h2{
+        margin-bottom: 25px;
+    }
+
+    .hero > div > section:nth-of-type(2) img{
+        height: 430px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .hero{
+        height: 680px;
+    }
+
+    .hero > div > section:nth-of-type(2) img{
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .hero{
+        height: 730px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tandencarousel, .reviewcarousel{
+    padding: 50px 0px 80px 0;
+}
+
+.tandencarousel > div, .reviewcarousel > div{
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.tandencarousel > div h2, .reviewcarousel > div h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 2px;
+}
+
+.tandencarousel > div p, .reviewcarousel > div p{
+    color: #6a6a6a;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tandencarousel > div .swiper-button-next, .tandencarousel > div .swiper-button-prev, .reviewcarousel > div .swiper-button-next, .reviewcarousel > div .swiper-button-prev{
+    color: #ffff !important;    
+    bottom: -260px;
+    background: #344999;
+    font-size: 12px;
+    padding: 25px !important;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.tandencarousel > div .swiper-button-next:hover, .tandencarousel > div .swiper-button-prev:hover, .reviewcarousel > div .swiper-button-next:hover, .reviewcarousel > div .swiper-button-prev:hover    {
+    background: #388df0;
+    transition: 0.4s ease;
+}
+
+.tandencarousel > div .swiper-button-next, .reviewcarousel > div .swiper-button-next{
+    right: 0;
+}
+
+.tandencarousel > div .swiper-button-prev, .reviewcarousel > div .swiper-button-prev{
+    left: 0;
+}
+
+.tandencarousel1, .reviewcarousel1{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.tandencarousel > div .tandencarousel1 .swiper-wrapper .swiper-slide, .reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 10px;
+    border-radius: 7px;
+    height: 250px;
+    width: 100%;
+}
+
+.reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section div:nth-of-type(1){
+    height: 100%;
+    width: 25%;
+    position: relative;
+}
+
+.reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section div:nth-of-type(1) img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section div:nth-of-type(2){
+    height: 100%;
+    width: 75%;
+    padding: 0 0 0 25px;
+    position: relative;
+}
+
+.reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section div:nth-of-type(2) span{
+    position: absolute;
+    top: 10px;
+    color: #ffb900;
+    font-size: 17px;
+}
+
+.reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section div:nth-of-type(2) p:nth-of-type(1){
+    position: absolute;
+    top: 46px;
+    left: 25px;
+    color: #344999;
+    text-align: initial;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section div:nth-of-type(2) p:nth-of-type(2){
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    text-align: initial;
+    padding: 0 25px 0 0;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    line-height: 25px;
+    font-style: italic;
+}
+
+.tandencarousel > div .tandencarousel1 .swiper-wrapper .swiper-slide img{
+    width: 290px;
+    height: auto;
+    border: 5px solid white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 5px 0 15px 0;
+}
+
+.tandencarousel > div .tandencarousel1 .swiper-wrapper .swiper-slide img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 1215px) {
+    .tandencarousel > div{
+        padding: 0 15px;
+    }
+
+    .tandencarousel > div .swiper-button-prev, .reviewcarousel > div .swiper-button-prev{
+        left: 15px;
+    }
+
+    .tandencarousel > div .swiper-button-next, .reviewcarousel > div .swiper-button-next{
+        right: 15px;
+    }
+
+    .tandencarousel > div .tandencarousel1 .swiper-wrapper .swiper-slide img{
+        width: 320px;
+        height: auto;
+    }    
+}
+
+@media only screen and (max-width: 980px) {
+    .tandencarousel > div .tandencarousel1 .swiper-wrapper .swiper-slide img{
+        width: 260px;
+        height: auto;
+    }    
+}
+
+@media only screen and (max-width: 870px) {
+    .reviewcarousel > div .reviewcarousel1 .swiper-wrapper .swiper-slide section div:nth-of-type(2) p:nth-of-type(2){
+        line-height: 22px;
+        padding: 0 5px 0 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tandencarousel > div .tandencarousel1 .swiper-wrapper .swiper-slide img{
+        width: 95%;
+        height: auto;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sterkepunten > div{
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 0 100px 0
+}
+
+.sterkepunten > div ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding-top: 35px;
+    border-top: 1px solid #d5d5d5;
+}
+
+.sterkepunten > div ul li{
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.sterkepunten > div ul li span{
+    background-color: #e2eaf3;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    display: block;
+    position: relative;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.sterkepunten > div ul li span svg{
+    color: #334999;
+    font-size: 40px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sterkepunten > div ul li h3{
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1215px) {
+    .sterkepunten > div{
+        padding: 25px 15px 100px 15px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .sterkepunten > div ul li h3{
+        font-size: 11px;
+        bottom: -30px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .sterkepunten > div ul li span{
+        width: 50px;
+        height: 50px;
+    }
+
+    .sterkepunten > div ul li span svg{
+        font-size: 25px;
+    }
+
+    .sterkepunten > div ul li h3{
+        font-size: 8px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .sterkepunten > div ul li h3{
+        font-size: 6px;
+    }
+}
+
+
+
+
+.contentcontainer > div{
+    max-width: 100%;
+    padding: 0;
+    display: flex;
+}
+
+.contentcontainer > div div{
+    width: 50%;
+    height: 470px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contentcontainer > div div:nth-of-type(2){
+    justify-content: flex-start;
+}
+
+.contentcontainer > div div section {
+    margin: 0;
+    max-width: 600px;
+}
+
+.contentcontainer > div div:nth-of-type(1) section {
+    padding: 0 35px 0 0;
+}
+
+.contentcontainer > div div:nth-of-type(2) section {
+    padding: 0 0 0 35px;
+}
+
+.contentcontainer > div div section h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #344999;    
+}
+
+.contentcontainer > div div section p {
+    color: #6a6a6a;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.contentcontainer > div div section img {
+    width: 75%;
+    height: auto;
+}
+
+
+.contentcontainer1 > div div:nth-of-type(1){
+    background: #398df0;
+}
+
+.contentcontainer1 > div div:nth-of-type(1) section{
+    padding: 0;
+    margin-right: 250px;
+}
+
+.contentcontainer1 > div div:nth-of-type(1) section img{
+    width: 200px;
+}
+
+
+
+.contentcontainer1 > div div:nth-of-type(2){
+    background: linear-gradient(to top, rgb(223, 233, 243) 0%, white 100%);    
+}
+
+
+.contentcontainer2 > div div:nth-of-type(1){
+    background: linear-gradient(to top, rgb(223, 233, 243) 0%, white 100%);    
+}
+.contentcontainer2 > div div:nth-of-type(2){
+    background: #398df0;
+}
+
+
+
+
+@media only screen and (max-width: 1215px) {
+    .contentcontainer > div div:nth-of-type(1) section {
+        padding: 0 35px 0 15px;
+    }
+    
+    .contentcontainer > div div:nth-of-type(2) section {
+        padding: 0 15px 0 35px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .contentcontainer > div div section h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .contentcontainer > div{
+        flex-direction: column;
+    }
+
+    .contentcontainer > div div{
+        width: 100%;
+    }
+
+    .contentcontainer > div div section img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contentcontainer2 > div div section img{
+        max-height: 400px;
+    }
+
+    .contentcontainer > div div:nth-of-type(1) {
+        justify-content: flex-start;
+    }
+
+    .contentcontainer > div div:nth-of-type(2) {
+        justify-content: flex-start;
+    }
+
+    .contentcontainer1 > div div:nth-of-type(1){
+        justify-content: center;
+    }
+
+    .contentcontainer2 > div div:nth-of-type(2){
+        justify-content: center;
+    }
+
+    .contentcontainer > div div:nth-of-type(1) section {
+        padding: 0 15px;
+    }
+    
+    .contentcontainer > div div:nth-of-type(2) section {
+        padding: 0 15px;
+    }
+
+    .contentcontainer1 > div div:nth-of-type(1) section{
+        margin-right: 0;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.langcontent > div{
+    max-width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.langcontent > div section{
+    width: 50%;
+}
+
+.langcontent > div section h2{
+    font-size: 35px;
+    color: #344999;
+}
+
+.langcontent > div section p{
+    color: #6a6a6a;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 25px 0;
+}
+
+.langcontent > div section a{
+    background-color: #388df0;
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 30px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.langcontent > div span{
+    width: fit-content;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+}
+
+.langcontent > div span img{
+    height: 430px;
+    width: auto;
+    transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 1215px){
+    .langcontent > div{
+        padding: 0 15px;    
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .langcontent > div span img{
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .langcontent > div{
+        height: 875px;
+        align-items: baseline;
+    }
+
+    .langcontent > div section{
+        width: 100%;
+        margin-top: 75px;
+    }
+
+    .langcontent > div span{
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .langcontent > div span img{
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .langcontent > div span img{
+        height: 350px;
+    }   
+}
+
+@media only screen and (max-width: 400px){
+    .langcontent > div{
+        height: 950px;
+    } 
+}
+
+@media only screen and (max-width: 320px){
+    .langcontent > div span img{
+        height: 300px;
+    }   
+}
