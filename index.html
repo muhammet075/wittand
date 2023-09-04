@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e367b28ca4.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
@@ -42,6 +46,7 @@
             </div>
         </div>
     </header>
+
     <main>
         <div class="hero">
             <div>
@@ -54,6 +59,17 @@
                 <section>
                     <img src="img/lachendvrouw.png" alt="Vrouw met een witte glimlach" data-aos="fade-up"/>
                 </section>
+            </div>
+        </div>
+
+        <div class="sterkepunten">
+            <div>
+                <ul>
+                    <li><span data-aos="flip-up"><i class="fa-solid fa-tooth"></i></span><h3>Witte Tanden binnen 24 uur</h3></li>
+                    <li><span data-aos="flip-up"><i class="fa-solid fa-hand-holding-heart"></i></span><h3>Met liefde en zorg ontwikkeld</h3></li>
+                    <li><span data-aos="flip-up"><i class="fa-solid fa-microscope"></i></span><h3>Ontwikkeld in onze labratorium</h3></li>
+                    <li><span data-aos="flip-up"><i class="fa-solid fa-truck"></i></span><h3>Levering binnen 1 á 2 werkdag(en)</h3></li>
+                </ul>
             </div>
         </div>
 
@@ -90,19 +106,6 @@
             </div>
         </div>
 
-        <div class="sterkepunten">
-            <div>
-                <ul>
-                    <li><span data-aos="flip-up"><i class="fa-solid fa-tooth"></i></span><h3>Witte Tanden binnen 24 uur</h3></li>
-                    <li><span data-aos="flip-up"><i class="fa-solid fa-hand-holding-heart"></i></span><h3>Met liefde en zorg ontwikkeld</h3></li>
-                    <li><span data-aos="flip-up"><i class="fa-solid fa-microscope"></i></span><h3>Ontwikkeld in onze labratorium</h3></li>
-                    <li><span data-aos="flip-up"><i class="fa-solid fa-truck"></i></span><h3>Levering binnen 1 á 2 werkdag(en)</h3></li>
-                </ul>
-            </div>
-        </div>
-
-
-
         <div class="contentcontainer contentcontainer1">
             <div>
                 <div>
@@ -119,7 +122,6 @@
                 </div>
             </div>
         </div>
-
         
         <div class="langcontent">
             <div>
@@ -133,7 +135,6 @@
                 </span>
             </div>
         </div>
-
 
         <div class="contentcontainer contentcontainer2">
             <div>
@@ -244,9 +245,87 @@
             </div>
         </div>
 
-
-
-
+        <div class="meestgesteldevragen">
+            <h2>Meest gestelde vragen</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span><i class="fa-solid fa-circle-plus"></i></span> Binnen hoeveel dagen ontvang ik mijn pakketje?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Als je doordeweeks voor 17:00 besteld, wordt je pakketje de zelfde dag of de volgende werkdag nog vestruud. Dan kan je je pakketje over 1 of 2 werkdagen ontvangen. Na 17:00 of in het weekend besteld is over 2 of 3 werk dagen geleverd.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span><i class="fa-solid fa-circle-plus"></i></span> Is al het snoep Halal?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Ja, alle snoep wat wij verkopen is Halal!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span><i class="fa-solid fa-circle-plus"></i></span> Hebben jullie een Halal Certificaat?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Ja, wij hebben een Halal Certificaat. <a href="/halal-certificaat">Klik hier</a> om het certificaat te bekijken.
+                  </div>
+                </div>
+              </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <span><i class="fa-solid fa-circle-plus"></i></span> Bevat het snoep E-Nummers?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Al onze snoep is vrij van niet-halal E-nummers zoals E120 karmijn of E904 schellak. Vandaar dat wij ook Halal Sweet heten!
+                  </div>
+                </div>
+              </div>
+                  <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <span><i class="fa-solid fa-circle-plus"></i></span> Ik ben geen moslim, kan ik halal eten?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Natuurlijk!
+                  </div>
+                </div>
+              </div>
+                    <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <span><i class="fa-solid fa-circle-plus"></i></span> Wat is Halal?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Halal is een speciaal Islamitich slacht methode.
+                  </div>
+                </div>
+              </div>
+                      <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <span><i class="fa-solid fa-circle-plus"></i></span> Kan ik mijn snoepjes retourneren?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"> Je kunt alleen het snoep retourneren als je het binnen 7 dagen nog niet hebt geopend.
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </main>
 
     <script src="/script.js"></script>

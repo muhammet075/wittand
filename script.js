@@ -42,11 +42,10 @@ const swiper2 = new Swiper('.reviewcarousel1', {
   breakpoints: {
   0: {
     slidesPerView: 1,
-       spaceBetween: 0,
   },
   870: {
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 0,
   },
   },
   centeredSlides: false,

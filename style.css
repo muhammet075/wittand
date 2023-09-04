@@ -7,6 +7,10 @@
     font-family: Roboto;
 }
 
+dl, ol, ul{
+    margin-bottom: 0 !important;
+}
+
 header{
     position: absolute;
     top: 0;
@@ -153,10 +157,9 @@ header > div:nth-of-type(2) > div ul li a{
 .hero{
     width: 100%;
     height: 600px;
-    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     border-bottom: 3px solid #334999;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .hero > div{
@@ -201,8 +204,8 @@ header > div:nth-of-type(2) > div ul li a{
     display: block;
     width: 200px;
     text-align: center;
-    padding: 18px 0;
-    border-radius: 30px;
+    padding: 13px 0;
+    border-radius: 10px;
     color: #ffff;
     text-decoration: none;
     font-weight: 500;
@@ -238,7 +241,7 @@ header > div:nth-of-type(2) > div ul li a{
     }
 
     .hero > div > section:nth-of-type(1) h1{
-        font-size: 30px;
+        font-size: 40px;
     }   
 
     .hero > div > section:nth-of-type(1) h2{
@@ -280,22 +283,45 @@ header > div:nth-of-type(2) > div ul li a{
 
 @media only screen and (max-width: 540px) {
     .hero{
-        height: 680px;
+        height: 500px;
+    }
+
+    .hero > div > section:nth-of-type(1) h1{
+        font-size: 33px;
+    }
+
+    .hero > div > section:nth-of-type(1) a{
+        width: 180px;
     }
 
     .hero > div > section:nth-of-type(2) img{
-        height: 350px;
+        height: 250px;
+        left: auto;
+        right: 20px;
     }
+    
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 370px) {
     .hero{
-        height: 730px;
+        height: 550px;
+    }
+
+    .hero > div > section:nth-of-type(1) h1 {
+        font-size: 30px;
+    }
+
+    .hero > div > section:nth-of-type(1) h2 {
+        margin-bottom: 20px;
+        font-size: 17px;
     }
 }
 
-
-
+@media only screen and (max-width: 320px) {
+    .hero{
+        height: 600px;
+    }
+}
 
 
 
@@ -315,7 +341,7 @@ header > div:nth-of-type(2) > div ul li a{
 
 
 .tandencarousel, .reviewcarousel{
-    padding: 50px 0px 80px 0;
+    padding: 50px 0px 100px 0;
 }
 
 .tandencarousel > div, .reviewcarousel > div{
@@ -327,7 +353,8 @@ header > div:nth-of-type(2) > div ul li a{
 .tandencarousel > div h2, .reviewcarousel > div h2{
     text-align: center;
     font-size: 35px;
-    margin-bottom: 2px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .tandencarousel > div p, .reviewcarousel > div p{
@@ -340,7 +367,7 @@ header > div:nth-of-type(2) > div ul li a{
 
 .tandencarousel > div .swiper-button-next, .tandencarousel > div .swiper-button-prev, .reviewcarousel > div .swiper-button-next, .reviewcarousel > div .swiper-button-prev{
     color: #ffff !important;    
-    bottom: -260px;
+    bottom: -255px;
     background: #344999;
     font-size: 12px;
     padding: 25px !important;
@@ -379,8 +406,8 @@ header > div:nth-of-type(2) > div ul li a{
     justify-content: center;
     align-items: center;
     border: 5px solid white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 5px;
     border-radius: 7px;
     height: 250px;
     width: 100%;
@@ -448,7 +475,7 @@ header > div:nth-of-type(2) > div ul li a{
     width: 290px;
     height: auto;
     border: 5px solid white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     margin: 5px 0 15px 0;
 }
 
@@ -459,7 +486,7 @@ header > div:nth-of-type(2) > div ul li a{
 
 
 @media only screen and (max-width: 1215px) {
-    .tandencarousel > div{
+    .tandencarousel > div, .reviewcarousel > div{
         padding: 0 15px;
     }
 
@@ -482,6 +509,16 @@ header > div:nth-of-type(2) > div ul li a{
         width: 260px;
         height: auto;
     }    
+}
+
+@media only screen and (max-width: 950px) {
+    .tandencarousel > div h2, .reviewcarousel > div h2{
+        font-size: 30px;
+    }
+
+    .tandencarousel > div p, .reviewcarousel > div p{
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 870px) {
@@ -509,12 +546,10 @@ header > div:nth-of-type(2) > div ul li a{
 
 
 
-
-
 .sterkepunten > div{
     max-width: 1200px;
     margin: auto;
-    padding: 25px 0 100px 0
+    padding: 25px 0 75px 0;
 }
 
 .sterkepunten > div ul{
@@ -524,7 +559,6 @@ header > div:nth-of-type(2) > div ul li a{
     gap: 20px;
     list-style: none;
     padding-top: 35px;
-    border-top: 1px solid #d5d5d5;
 }
 
 .sterkepunten > div ul li{
@@ -565,7 +599,7 @@ header > div:nth-of-type(2) > div ul li a{
 
 @media only screen and (max-width: 1215px) {
     .sterkepunten > div{
-        padding: 25px 15px 100px 15px;
+        padding: 25px 15px 75px 15px;
     }
 }
 
@@ -577,26 +611,37 @@ header > div:nth-of-type(2) > div ul li a{
 }
 
 @media only screen and (max-width: 770px) {
+    .sterkepunten > div{
+        padding: 25px 15px;
+    }
+
+    .sterkepunten > div ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+
+    .sterkepunten > div ul li{
+        width: 100%;
+    }
+
     .sterkepunten > div ul li span{
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
     }
 
     .sterkepunten > div ul li span svg{
-        font-size: 25px;
+        font-size: 33px;
     }
 
     .sterkepunten > div ul li h3{
-        font-size: 8px;
+        position: initial;
+        font-size: 12px;
+        margin: 15px 0;
         font-weight: 400;
     }
 }
 
-@media only screen and (max-width: 340px) {
-    .sterkepunten > div ul li h3{
-        font-size: 6px;
-    }
-}
 
 
 
@@ -634,6 +679,7 @@ header > div:nth-of-type(2) > div ul li a{
 
 .contentcontainer > div div section h2 {
     font-size: 35px;
+    font-weight: 400;
     margin-bottom: 15px;
     color: #344999;    
 }
@@ -661,15 +707,13 @@ header > div:nth-of-type(2) > div ul li a{
 }
 
 .contentcontainer1 > div div:nth-of-type(1) section img{
-    width: 200px;
+    width: auto;
+    height: 375px;
 }
-
-
 
 .contentcontainer1 > div div:nth-of-type(2){
     background: linear-gradient(to top, rgb(223, 233, 243) 0%, white 100%);    
 }
-
 
 .contentcontainer2 > div div:nth-of-type(1){
     background: linear-gradient(to top, rgb(223, 233, 243) 0%, white 100%);    
@@ -677,9 +721,6 @@ header > div:nth-of-type(2) > div ul li a{
 .contentcontainer2 > div div:nth-of-type(2){
     background: #398df0;
 }
-
-
-
 
 @media only screen and (max-width: 1215px) {
     .contentcontainer > div div:nth-of-type(1) section {
@@ -689,11 +730,19 @@ header > div:nth-of-type(2) > div ul li a{
     .contentcontainer > div div:nth-of-type(2) section {
         padding: 0 15px 0 35px;
     }
+
+    .contentcontainer1 > div div:nth-of-type(1) section{
+        margin-right: 100px;
+    }
 }
 
 @media only screen and (max-width: 950px){
     .contentcontainer > div div section h2 {
         font-size: 30px;
+    }
+    
+    .contentcontainer > div div section p{
+        font-size: 14px;
     }
 }
 
@@ -704,6 +753,7 @@ header > div:nth-of-type(2) > div ul li a{
 
     .contentcontainer > div div{
         width: 100%;
+        height: 375px;
     }
 
     .contentcontainer > div div section img{
@@ -741,6 +791,28 @@ header > div:nth-of-type(2) > div ul li a{
 
     .contentcontainer1 > div div:nth-of-type(1) section{
         margin-right: 0;
+    }
+
+    .contentcontainer2 > div div:nth-of-type(1){
+        background: #398df0;    
+    }
+
+    .contentcontainer1 > div div:nth-of-type(1) section img{
+        width: auto;
+        height: 300px;
+    }
+    
+    .contentcontainer2 > div div:nth-of-type(1) section h2{
+        color: #ffff;
+    }
+    
+    .contentcontainer2 > div div:nth-of-type(1) section p{
+        color: #ffff;
+        font-weight: 400;
+    }
+
+    .contentcontainer2 > div div:nth-of-type(2){
+        background: #ffff;    
     }
 
     
@@ -783,7 +855,8 @@ header > div:nth-of-type(2) > div ul li a{
 
 .langcontent > div section h2{
     font-size: 35px;
-    color: #344999;
+    font-weight: 400;
+    margin-bottom: 25px;
 }
 
 .langcontent > div section p{
@@ -799,8 +872,8 @@ header > div:nth-of-type(2) > div ul li a{
     display: block;
     width: 200px;
     text-align: center;
-    padding: 18px 0;
-    border-radius: 30px;
+    padding: 13px 0;
+    border-radius: 10px;
     color: #ffff;
     text-decoration: none;
     font-weight: 500;
@@ -810,8 +883,8 @@ header > div:nth-of-type(2) > div ul li a{
 .langcontent > div span{
     width: fit-content;
     position: absolute;
-    bottom: -4px;
-    right: 0;
+    bottom: 0px;
+    right: 0px;
 }
 
 .langcontent > div span img{
@@ -826,6 +899,16 @@ header > div:nth-of-type(2) > div ul li a{
     }
 }
 
+@media only screen and (max-width: 950px){
+    .langcontent > div section h2{
+        font-size: 30px;
+    }
+
+    .langcontent > div section p{
+        font-size: 14px;
+    }
+}
+
 @media only screen and (max-width: 900px){
     .langcontent > div span img{
         height: 350px;
@@ -834,7 +917,7 @@ header > div:nth-of-type(2) > div ul li a{
 
 @media only screen and (max-width: 750px){
     .langcontent > div{
-        height: 875px;
+        height: 800px;
         align-items: baseline;
     }
 
@@ -855,19 +938,105 @@ header > div:nth-of-type(2) > div ul li a{
 }
 
 @media only screen and (max-width: 470px){
-    .langcontent > div span img{
-        height: 350px;
-    }   
-}
-
-@media only screen and (max-width: 400px){
     .langcontent > div{
-        height: 950px;
+        height: 750px;
     } 
-}
 
-@media only screen and (max-width: 320px){
     .langcontent > div span img{
         height: 300px;
     }   
+}
+
+@media only screen and (max-width: 392px){
+    .langcontent > div span img{
+        height: 250px;
+    }   
+}
+
+
+
+
+
+
+
+
+.meestgesteldevragen {
+    max-width: 900px;
+    margin: 50px auto
+}
+
+.meestgesteldevragen > h2{
+    text-align: center;  
+    margin-bottom: 15px;  
+    font-weight: 400;
+}
+
+.meestgesteldevragen .accordion-item {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.meestgesteldevragen .accordion-item:first-of-type {
+    border-top: 1px solid #dddddd;
+}
+
+.meestgesteldevragen .accordion-header {
+    background: #f2f9ff;
+    margin-bottom: 0;
+}
+
+.meestgesteldevragen .accordion-button {
+    background: none;
+    border: none;
+    font-size: 17px;
+    padding: 20px 0px 20px 20px;
+    width: 100%;
+    text-align: initial;
+    font-weight: 500;
+    color: #344999;;
+}
+
+.meestgesteldevragen .accordion-button span{
+    margin-right: 7px;
+}
+
+.meestgesteldevragen .accordion-header:hover{
+    background: #d6e9f9;
+    transition: 0.4s ease;
+}
+
+.meestgesteldevragen .accordion-body {
+    padding: 0 17px;
+    color: #000;
+    background: #ffff;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #d5d5d5;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+@media only screen and (max-width: 1215px){
+    .meestgesteldevragen{
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .meestgesteldevragen > h2{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .meestgesteldevragen .accordion-button{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .meestgesteldevragen .accordion-button{
+        font-size: 12px;
+    }
 }
